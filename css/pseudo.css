@@ -1,0 +1,157 @@
+/* Universal Selector */
+/* Applies styles to all elements */
+*{
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+/* ========================= */
+/*      PSEUDO CLASSES       */
+/* ========================= */
+
+/* A Pseudo Class is a keyword added to a CSS 
+selector that is used to style an element when 
+it is in a specific state. */
+/* :link */
+/* Selects unvisited links */
+a:link{
+    color: blue;
+}
+
+/* :visited */
+/* Selects links that have already been visited */
+a:visited{
+    color: purple;
+}
+
+/* :hover */
+/* Applies styles when mouse pointer is over the element */
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+/* :active */
+/* Applies styles while the element is being clicked */
+button:active{
+    background-color: red;
+}
+
+/* :focus */
+/* Applies styles when an input field gets focus */
+input:focus{
+    border: 3px solid blue;
+    outline: none;
+}
+
+/* :checked */
+/* Selects checked checkbox or radio button */
+input:checked{
+    width: 20px;
+    height: 20px;
+}
+
+/* :disabled */
+/* Selects disabled form elements */
+input:disabled{
+    background-color: lightgray;
+}
+
+/* :enabled */
+/* Selects enabled form elements */
+input:enabled{
+    border: 2px solid black;
+}
+
+/* :required */
+/* Selects input fields with required attribute */
+input:required{
+    background-color: lightyellow;
+}
+
+/* :first-child */
+/* Selects the first child element of its parent */
+li:first-child{
+    color: red;
+}
+
+/* :last-child */
+/* Selects the last child element of its parent */
+li:last-child{
+    color: green;
+}
+
+/* :nth-child(n) */
+/* Selects element based on its position */
+li:nth-child(2){
+    background-color: yellow;
+}
+
+/* :not(selector) */
+/* Selects elements except the specified selector */
+p:not(.special){
+    color: brown;
+}
+
+/* :empty */
+/* Selects elements that have no child content */
+div:empty{
+    width: 150px;
+    height: 60px;
+    background-color: pink;
+    border: 2px solid black;
+}
+
+
+/* ========================= */
+/*      PSEUDO ELEMENTS      */
+/* ========================= */
+/* A Pseudo Element is a keyword added to a CSS
+ selector that is used to style a specific part 
+ of an element or insert virtual content. */
+
+/* ::before */
+/* Inserts content before the selected element */
+h1::before{
+    content: "🔥 ";
+}
+
+/* ::after */
+/* Inserts content after the selected element */
+h1::after{
+    content: " 🚀";
+}
+
+/* ::first-letter */
+/* Styles the first letter of a block element */
+p::first-letter{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+/* ::first-line */
+/* Styles the first line of a block element */
+p::first-line{
+    background-color: yellow;
+}
+
+/* ::placeholder */
+/* Styles the placeholder text inside input fields */
+input::placeholder{
+    color: blue;
+}
+
+/* ::selection */
+/* Styles the text selected by the user */
+::selection{
+    background-color: black;
+    color: white;
+}
+
+/* ::marker */
+/* Styles list item bullets or numbers */
+ul li::marker{
+    color: purple;
+    font-size: 20px;
+}
