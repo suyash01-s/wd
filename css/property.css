@@ -6,6 +6,7 @@ text-decoration-color: #353333;
 text-indent: 50px;
 text-decoration-style:solid;
 text-transform: uppercase;
+/* font property */
 font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
 font-style:italic;
@@ -17,3 +18,18 @@ h1{
 color: #44cc04;
 text-align: center;
 }
+
+/* background property */
+section{
+/* background-color: #b61919; */
+height: 900px;
+width: 1000px;
+background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+/* background-image: url("./html/download.png"); */
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+background-attachment:fixed;
+}
+
+/* how to mix 2 images or more than two images */
