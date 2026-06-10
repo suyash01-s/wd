@@ -1,0 +1,26 @@
+/* Id selector */
+#c2{
+    background-color: blueviolet;
+    color: darkmagenta;
+}
+
+/* Class Selector */
+.c1{
+    background-color: cadetblue;
+    color: rgb(194, 76, 30);
+}
+
+/* Grouping Selector */
+#c2,.c1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Universal Selector */
+*{
+    background: radial-gradient(yellow,white);
+}
+
+/* Tagname selector */
+p{
+    color: rgb(85, 51, 195); 
+}

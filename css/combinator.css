@@ -1,0 +1,23 @@
+/* combinator selector */
+
+/* descenment selector */
+div p{
+    color: rgb(85, 51, 195);
+}
+/* child combinator */
+div > p{
+    font-style: italic;
+    background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+/* adjecent combinator */
+div + p{
+    text-decoration: underline;
+}
+
+/* general sibling combinator */
+div ~ p{
+    font-weight: bold;
+    background-color: rgba(0, 255, 0, 0.5);
+}
