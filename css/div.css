@@ -1,0 +1,6 @@
+.demo{
+    display:grid;
+grid-template-columns:repeat(3,1fr auto);
+height:100px;
+width:200px;
+}

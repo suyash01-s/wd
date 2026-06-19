@@ -1,0 +1,28 @@
+*{
+    background:linear-gradient(white,rgb(243 ,130, 243));
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(rgb(224, 122, 6), rgb(36, 7, 201));
+    padding-top: 80px;
+    padding-left: 100px;
+    /* float:right; */
+
+    margin-top: 180px;
+    margin-left:130px;
+    border-style:dotted;
+    border-color:brown;
+    box-shadow: 10px 10px 5px grey;
+    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0.8; /* blur the image */
+}
+
+div:hover{
+    background:linear-gradient(rgb(224, 122, 6), rgb(36, 7, 201));
+    border-radius: 70px;
+    
+}
