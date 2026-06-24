@@ -20,4 +20,8 @@ for(let j=0;j<a.length;j++){
     b[j].style.font="italic"
 }
 // document.querySelector()
+let p = document.querySelector(".para")
+p.style.backgroundColor="black"
+p.style.color = "red"
+p.style.fontSize = "30px"
 // document.querySelectorAll()
