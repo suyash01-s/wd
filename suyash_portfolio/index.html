@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyash Supekar - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home"><i class="fas fa-code"></i> Suyash</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="#home">Home</a></li><li class="nav-item"><a class="nav-link" href="#about">About</a></li><li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li><li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li><li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="#education">Education</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li></ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero py-5 text-white d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-2">Hi, I'm Suyash Supekar</h1>
+            <p class="fs-4 text-light">Python & Full Stack Developer</p>
+            <p class="mb-4">I build responsive web applications using Python, Flask, PHP, MySQL, and modern web technologies.</p>
+            <div class="d-flex gap-2 justify-content-center flex-wrap"><a href="#projects" class="btn btn-light">View Projects</a><a href="#contact" class="btn btn-outline-light">Contact Me</a></div>
+            <div class="social-links mt-4"><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a><a href="mailto:suyash@email.com"><i class="fas fa-envelope"></i></a></div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-md-6"><div class="avatar"><i class="fas fa-user-circle"></i></div></div>
+                <div class="col-md-6"><p>I am a Computer Science graduate passionate about web development. I have hands-on experience with Python, Flask, PHP, MySQL, HTML, CSS, and JavaScript.</p><p>During my internship at InfoStack, I worked on real-world projects implementing CRUD operations and creating scalable web applications. I enjoy solving problems and creating user-friendly solutions.</p><p>Always eager to learn new technologies and improve my skills in full-stack development.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row g-4" id="skillsContainer"></div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <div class="row"><div class="col-lg-8 mx-auto timeline"><div class="timeline-item"><div class="timeline-marker"><i class="fas fa-briefcase"></i></div><div><h5>Python Intern - InfoStack</h5><p class="text-muted">2025</p><ul><li>Worked with Python and Flask framework</li><li>Created Camera Rental Website with CRUD operations</li><li>Implemented user authentication and database management</li><li>Connected Flask applications with MySQL</li><li>Developed responsive frontend using HTML, CSS, JavaScript</li></ul></div></div></div></div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row g-4" id="projectsContainer"></div>
+        </div>
+    </section>
+
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Education</h2>
+            <div class="row g-4"><div class="col-md-6 edu-card"><i class="fas fa-graduation-cap"></i><h5>BSc Computer Science</h5><p class="text-primary">Sangameshwar College</p><p class="text-muted">2023 - 2026 | CGPA: 7.92/10</p></div><div class="col-md-6 edu-card"><i class="fas fa-book"></i><h5>HSC Science</h5><p class="text-primary">Sangameshwar Junior College</p><p class="text-muted">2022 - 2023</p></div></div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact</h2>
+            <div class="row"><div class="col-md-6"><div class="contact-info"><p><i class="fas fa-envelope"></i> <a href="mailto:suyash@email.com">suyash@email.com</a></p><p><i class="fas fa-phone"></i> +91 XXXXXXXXXX</p><p><i class="fas fa-map-marker-alt"></i> Maharashtra, India</p><div class="social-links-large mt-4"><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></div></div></div><div class="col-md-6"><form id="contactForm"><input type="text" class="form-control mb-2" placeholder="Your Name" required><input type="email" class="form-control mb-2" placeholder="Email" required><input type="text" class="form-control mb-2" placeholder="Subject" required><textarea class="form-control mb-2" rows="4" placeholder="Message" required></textarea><button type="submit" class="btn btn-primary w-100">Send Message</button></form></div></div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Suyash Supekar | Designed & Built by Suyash</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const skills = [
+            {cat: 'Programming', icon: 'fa-code', items: [{n: 'Python', p: 90}, {n: 'JavaScript', p: 75}, {n: 'PHP', p: 80}, {n: 'C/C++', p: 70}]},
+            {cat: 'Frontend', icon: 'fa-paint-brush', items: [{n: 'HTML5', p: 95}, {n: 'CSS3', p: 90}, {n: 'Bootstrap', p: 85}, {n: 'Responsive', p: 90}]},
+            {cat: 'Backend', icon: 'fa-server', items: [{n: 'Flask', p: 85}, {n: 'MySQL', p: 80}, {n: 'Database', p: 85}, {n: 'REST APIs', p: 75}]},
+            {cat: 'Tools', icon: 'fa-tools', items: [{n: 'Git/GitHub', p: 80}, {n: 'VS Code', p: 90}, {n: 'Problem Solving', p: 85}, {n: 'CRUD', p: 90}]}
+        ];
+        const projects = [
+            {t: 'Camera Rental', i: 'fa-camera', tech: ['Python', 'Flask', 'MySQL'], f: ['User Registration', 'Booking System', 'Database', 'CRUD']},
+            {t: 'Student Results', i: 'fa-chart-bar', tech: ['PHP', 'MySQL', 'HTML/CSS'], f: ['Student Records', 'Result Mgmt', 'Dashboard', 'Operations']},
+            {t: 'E-Commerce', i: 'fa-shopping-cart', tech: ['HTML5', 'CSS3', 'JavaScript'], f: ['Responsive Design', 'Products', 'Shopping Cart', 'Modern UI']}
+        ];
+        
+        skills.forEach(s => {
+            const html = `<div class="col-md-6 col-lg-3"><div class="skill-card"><h6><i class="fas ${s.icon}"></i> ${s.cat}</h6>${s.items.map(it => `<div class="skill-item"><div class="d-flex justify-content-between small"><span>${it.n}</span><span>${it.p}%</span></div><div class="progress" style="height:6px"><div class="progress-bar" style="width:${it.p}%"></div></div></div>`).join('')}</div></div>`;
+            document.getElementById('skillsContainer').insertAdjacentHTML('beforeend', html);
+        });
+        
+        projects.forEach(p => {
+            const html = `<div class="col-md-6 col-lg-4"><div class="project-card"><div class="proj-img"><i class="fas ${p.i}"></i><div class="proj-overlay"><a href="#" class="btn btn-sm btn-primary"><i class="fas fa-link"></i></a><a href="https://github.com" target="_blank" class="btn btn-sm btn-light"><i class="fab fa-github"></i></a></div></div><div class="proj-info"><h6>${p.t}</h6><div class="tech-tags">${p.tech.map(t => `<span class="badge bg-primary">${t}</span>`).join('')}</div><ul class="list-unstyled small">${p.f.map(f => `<li><i class="fas fa-check text-success"></i> ${f}</li>`).join('')}</ul></div></div></div>`;
+            document.getElementById('projectsContainer').insertAdjacentHTML('beforeend', html);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+            e.preventDefault();
+            const t = document.querySelector(a.getAttribute('href'));
+            t && t.scrollIntoView({behavior: 'smooth'});
+        }));
+
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Thanks for your message! I\'ll get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
