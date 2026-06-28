@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloth Hub – Discover Your Style</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts – Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <i class="bi bi-bag-heart-fill brand-icon"></i>
+      <span class="brand-text">Cloth Hub</span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mens">Men</a></li>
+        <li class="nav-item"><a class="nav-link" href="#womens">Women</a></li>
+        <li class="nav-item"><a class="nav-link nav-sale" href="#sale">Sale</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Cart Icon -->
+      <div class="d-flex align-items-center">
+        <a href="#" class="btn btn-outline-light position-relative cart-btn">
+          <i class="bi bi-bag fs-5"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section d-flex align-items-center" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container position-relative text-center text-white">
+    <p class="hero-tagline">New Arrivals 2024</p>
+    <h1 class="hero-heading">Discover Your Style</h1>
+    <p class="hero-subtitle">
+      Explore our latest collection of premium clothing crafted for every occasion.
+      <br class="d-none d-md-block" />Style that speaks, comfort that stays.
+    </p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#mens" class="btn btn-hero-primary">Shop Now <i class="bi bi-arrow-right"></i></a>
+      <a href="#categories" class="btn btn-hero-outline">Browse Categories</a>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator mt-5">
+      <i class="bi bi-chevron-double-down"></i>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== CATEGORIES SECTION ========== -->
+<section class="py-5 bg-light" id="categories">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-badge">Collections</span>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-subtitle">Find exactly what you're looking for</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Men's Wear -->
+      <div class="col-6 col-md-3">
+        <a href="#mens" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="https://picsum.photos/300/350?random=1" alt="Men's Wear" class="category-img" />
+              <div class="category-overlay">
+                <span>Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="category-label">Men's Wear</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Women's Wear -->
+      <div class="col-6 col-md-3">
+        <a href="#womens" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="https://picsum.photos/300/350?random=2" alt="Women's Wear" class="category-img" />
+              <div class="category-overlay">
+                <span>Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="category-label">Women's Wear</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Shirts -->
+      <div class="col-6 col-md-3">
+        <a href="#mens" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="https://picsum.photos/300/350?random=3" alt="Shirts" class="category-img" />
+              <div class="category-overlay">
+                <span>Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="category-label">Shirts</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Pants -->
+      <div class="col-6 col-md-3">
+        <a href="#mens" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="https://picsum.photos/300/350?random=4" alt="Pants" class="category-img" />
+              <div class="category-overlay">
+                <span>Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="category-label">Pants</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== MEN'S COLLECTION ========== -->
+<section class="py-5" id="mens">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-badge">For Him</span>
+      <h2 class="section-title">Men's Collection</h2>
+      <p class="section-subtitle">Crafted for comfort and style</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=5" alt="Men's Casual Shirt" class="product-img" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Men's Casual Shirt</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(128)</span>
+            </div>
+            <div class="product-price">₹899</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=6" alt="Men's Formal Shirt" class="product-img" />
+            <span class="badge-bestseller">Best Seller</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Men's Formal Shirt</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(214)</span>
+            </div>
+            <div class="product-price">₹1,299</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=7" alt="Men's Slim Fit Jeans" class="product-img" />
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Men's Slim Fit Jeans</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(97)</span>
+            </div>
+            <div class="product-price">₹1,599</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=8" alt="Men's Chinos" class="product-img" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Men's Chinos</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(83)</span>
+            </div>
+            <div class="product-price">₹1,199</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+
+<!-- ========== BANNER STRIP ========== -->
+<div class="banner-strip py-4">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-3">
+        <i class="bi bi-truck fs-3"></i>
+        <p class="mb-0 mt-1 fw-500">Free Shipping<br /><small>On orders above ₹999</small></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-arrow-repeat fs-3"></i>
+        <p class="mb-0 mt-1 fw-500">Easy Returns<br /><small>7-day return policy</small></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-shield-check fs-3"></i>
+        <p class="mb-0 mt-1 fw-500">100% Authentic<br /><small>Guaranteed quality</small></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-headset fs-3"></i>
+        <p class="mb-0 mt-1 fw-500">24/7 Support<br /><small>Always here to help</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== WOMEN'S COLLECTION ========== -->
+<section class="py-5 bg-light" id="womens">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-badge">For Her</span>
+      <h2 class="section-title">Women's Collection</h2>
+      <p class="section-subtitle">Elegant, vibrant, and made for you</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=10" alt="Women's Kurti" class="product-img" />
+            <span class="badge-bestseller">Best Seller</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Women's Kurti</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(312)</span>
+            </div>
+            <div class="product-price">₹749</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=11" alt="Women's Floral Dress" class="product-img" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Women's Floral Dress</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(189)</span>
+            </div>
+            <div class="product-price">₹1,499</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=12" alt="Women's Palazzo Pants" class="product-img" />
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Women's Palazzo Pants</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(75)</span>
+            </div>
+            <div class="product-price">₹899</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=13" alt="Women's Top" class="product-img" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Women's Top</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(144)</span>
+            </div>
+            <div class="product-price">₹599</div>
+            <button class="btn btn-add-cart w-100">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+
+<!-- ========== SALE SECTION ========== -->
+<section class="sale-section py-5" id="sale">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-badge sale-badge-pill">🔥 Limited Time</span>
+      <h2 class="section-title text-white">Hot Sale Deals</h2>
+      <p class="section-subtitle text-white opacity-75">Grab them before they're gone!</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Sale Item 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="product-card sale-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=15" alt="Men's Jacket" class="product-img" />
+            <span class="badge-sale">40% OFF</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Men's Denim Jacket</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(201)</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="sale-price">₹1,499</span>
+              <span class="original-price">₹2,499</span>
+            </div>
+            <button class="btn btn-add-cart w-100 mt-2">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sale Item 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="product-card sale-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=16" alt="Women's Ethnic Suit" class="product-img" />
+            <span class="badge-sale">35% OFF</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Women's Ethnic Suit</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(178)</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="sale-price">₹1,299</span>
+              <span class="original-price">₹1,999</span>
+            </div>
+            <button class="btn btn-add-cart w-100 mt-2">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sale Item 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="product-card sale-card">
+          <div class="product-img-wrap">
+            <img src="https://picsum.photos/300/350?random=17" alt="Unisex Hoodie" class="product-img" />
+            <span class="badge-sale">50% OFF</span>
+          </div>
+          <div class="product-body">
+            <h6 class="product-name">Unisex Hoodie</h6>
+            <div class="product-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(263)</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="sale-price">₹999</span>
+              <span class="original-price">₹1,999</span>
+            </div>
+            <button class="btn btn-add-cart w-100 mt-2">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+
+<!-- ========== NEWSLETTER ========== -->
+<section class="newsletter-section py-5">
+  <div class="container">
+    <div class="newsletter-box text-center">
+      <i class="bi bi-envelope-paper-heart fs-1 text-primary mb-3"></i>
+      <h3 class="fw-700">Subscribe & Save 10%</h3>
+      <p class="text-muted mb-4">Get the latest deals and new arrivals straight to your inbox.</p>
+      <form class="d-flex justify-content-center flex-wrap gap-2" onsubmit="return false;">
+        <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" />
+        <button type="submit" class="btn btn-newsletter">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer pt-5 pb-3" id="contact">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Brand Column -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+          <i class="bi bi-bag-heart-fill brand-icon-footer"></i>
+          <span class="footer-brand-name">Cloth Hub</span>
+        </div>
+        <p class="footer-desc">
+          Your one-stop destination for premium clothing. We bring you the finest fashion at unbeatable prices, crafted with love and quality.
+        </p>
+        <!-- Social Icons -->
+        <div class="social-icons d-flex gap-3 mt-3">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#mens">Men's Wear</a></li>
+          <li><a href="#womens">Women's Wear</a></li>
+          <li><a href="#sale">Sale</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Care -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h6 class="footer-heading">Customer Care</h6>
+        <ul class="footer-links">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Return & Refund</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <h6 class="footer-heading">Get in Touch</h6>
+        <ul class="footer-contact">
+          <li>
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>42, Fashion Street, Linking Road,<br />Mumbai, Maharashtra – 400050</span>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <i class="bi bi-envelope-fill"></i>
+            <span>support@clothhub.in</span>
+          </li>
+          <li>
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /row -->
+
+    <hr class="footer-divider mt-4" />
+
+    <!-- Bottom Bar -->
+    <div class="row align-items-center pt-3 pb-1">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="footer-copy mb-0">© 2024 Cloth Hub. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+        <div class="payment-icons d-flex justify-content-center justify-content-md-end gap-2 flex-wrap">
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">UPI</span>
+          <span class="payment-badge">Paytm</span>
+          <span class="payment-badge">GPay</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cart Button Script -->
+<script>
+  // Add to Cart interaction
+  document.querySelectorAll('.btn-add-cart').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const badge = document.querySelector('.navbar .badge');
+      let count = parseInt(badge.textContent);
+      badge.textContent = count + 1;
+
+      // Visual feedback
+      this.innerHTML = '<i class="bi bi-check-circle"></i> Added!';
+      this.classList.add('btn-added');
+      const original = '<i class="bi bi-bag-plus"></i> Add to Cart';
+      setTimeout(() => {
+        this.innerHTML = original;
+        this.classList.remove('btn-added');
+      }, 1500);
+    });
+  });
+
+  // Sticky navbar shadow on scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    if (window.scrollY > 50) {
+      nav.classList.add('nav-scrolled');
+    } else {
+      nav.classList.remove('nav-scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>

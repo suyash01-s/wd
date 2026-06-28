@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
     color:#333;
     line-height:1.6;
     scroll-behavior:smooth;
@@ -36,7 +36,6 @@ h2::after{
 }
 
 
-
 /* =====================
    Navbar
 ===================== */
@@ -59,25 +58,32 @@ h2::after{
 }
 
 
-
 /* =====================
    Hero Section
 ===================== */
 
 .hero{
+
     min-height:90vh;
     background:#111827;
     display:flex;
     align-items:center;
+
 }
+
 
 .hero h1{
+
     font-size:45px;
+
 }
 
+
 .hero p{
+
     font-size:18px;
     color:#ddd;
+
 }
 
 
@@ -96,11 +102,9 @@ h2::after{
 
     padding:10px 25px;
     border-radius:25px;
-    font-weight:500;
     margin:5px;
 
 }
-
 
 
 .social-links a{
@@ -126,15 +130,6 @@ h2::after{
 ===================== */
 
 
-.avatar{
-
-    font-size:150px;
-    color:#0d6efd;
-    text-align:center;
-
-}
-
-
 #about p{
 
     font-size:17px;
@@ -143,47 +138,44 @@ h2::after{
 }
 
 
-
 /* =====================
-   Skills Cards
+   Skills Section
 ===================== */
 
 
-.skill-card{
+.skill-box{
 
     background:white;
     padding:25px;
-    border-radius:10px;
+    text-align:center;
+    border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
-    height:100%;
     transition:.3s;
+    height:100%;
 
 }
 
 
-.skill-card:hover{
+.skill-box:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-8px);
 
 }
 
 
-.skill-card h6{
+.skill-box i{
+
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:15px;
+
+}
+
+
+.skill-box h5{
 
     font-size:18px;
-    margin-bottom:20px;
-
-}
-
-
-.progress{
-
-    background:#eee;
-}
-
-.progress-bar{
-
-    background:#0d6efd;
+    font-weight:600;
 
 }
 
@@ -214,52 +206,66 @@ h2::after{
 
 
 /* =====================
-   Projects
+   Projects Section
 ===================== */
 
-
-.project-card{
+.project-box{
 
     background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
     transition:.3s;
 
 }
 
 
-.project-card:hover{
+.project-box:hover{
 
     transform:translateY(-8px);
 
 }
 
 
+.project-box i{
 
-.proj-img{
-
-    height:180px;
-    background:#111827;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    font-size:70px;
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:15px;
 
 }
 
 
-.proj-info{
+.project-box h5{
 
-    padding:20px;
+    font-weight:600;
+    margin-bottom:15px;
 
 }
 
 
-.tech-tags span{
+.project-box p{
 
-    margin-right:5px;
+    font-size:15px;
+    color:#666;
+
+}
+
+
+.project-box ul{
+
+    text-align:left;
+    margin-top:15px;
+    padding-left:20px;
+
+}
+
+
+.project-box li{
+
+    margin-bottom:8px;
 
 }
 
@@ -318,7 +324,6 @@ form textarea{
 }
 
 
-
 form button{
 
     padding:12px;
@@ -348,6 +353,7 @@ footer{
 
 @media(max-width:768px){
 
+
     .hero h1{
 
         font-size:32px;
@@ -368,5 +374,6 @@ footer{
         text-align:center;
 
     }
+
 
 }
