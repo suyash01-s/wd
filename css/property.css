@@ -1,22 +1,27 @@
 /* text property */
 P{
-color: #e62121;
+color: #e77307;
 text-decoration: underline;
 text-decoration-color: #353333;
 text-indent: 50px;
 text-decoration-style:solid;
 text-transform: uppercase;
 /* font property */
-font-size: 20px;
+/* font-size: 20px;
 font-family: Arial, Helvetica, sans-serif;
 font-style:italic;
 font-weight: bold;
-font-variant:small-caps;
+font-variant:small-caps; */
 }
 
 h1{
 color: #44cc04;
 text-align: center;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-style:italic;
+font-weight: bold;
+font-variant:small-caps;
 }
 
 /* background property */
@@ -25,14 +30,36 @@ section{
 /* background-color: #b61919; */
 height: 900px;
 width: 1000px;
-background-image:url("../html/download.png"),url("../html/images.webp");
-/* background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff); */
-/* background-image: url("./html/download.png"); */
-background-repeat: no-repeat;
-background-position: center;
-background-size:cover;
+background-image: url("../html/download.png"), url("../html/download.jfif");
+/*background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff); */
+/* background-image: url("./html/download.png");*/
+background-repeat: no-repeat, no-repeat;
+background-position: center, center;
+background-size: cover, cover;
+background-blend-mode: multiply;
+opacity: 1.8;
 background-attachment:fixed;
+overflow: hidden;
 
 }
 
-/* how to mix 2 images or more than two images */
+.scroll-text {
+	width: max-content;
+	animation: scroll-right-to-left 8s linear infinite;
+}
+
+.scroll-text h1 {
+	white-space: nowrap;
+}
+
+@keyframes scroll-right-to-left {
+	from {
+		transform: translateX(100vw);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+
+}
+
+/* Add more comma-separated url() values to mix more images. */

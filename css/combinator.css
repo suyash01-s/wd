@@ -5,6 +5,7 @@ div p{
     color: rgb(85, 51, 195);
 }
 /* child combinator */
+/* it will target direct and indirect child of div */
 div > p{
     font-style: italic;
     background-color: rgba(255, 0, 0, 0.5);
@@ -12,11 +13,13 @@ div > p{
 }
 
 /* adjecent combinator */
+/* it will target the immediately following sibling of div */
 div + p{
     text-decoration: underline;
 }
 
 /* general sibling combinator */
+/* it will target all following siblings of div */
 div ~ p{
     font-weight: bold;
     background-color: rgba(0, 255, 0, 0.5);
