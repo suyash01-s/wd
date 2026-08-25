@@ -4,3 +4,8 @@ grid-template-columns:repeat(3,1fr auto);
 height:100px;
 width:200px;
 }
+
+img:hover{  
+    transform:scale(1.2);
+    transition:all 0.5s;
+}
