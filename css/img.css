@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+ 
+ body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+    }
+.container{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 100px;
+}
+.container img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+}
+.images{
+    top: 50px;
+    left: 225px;
+    animation: top 2s infinite alternate;
+}
+@keyframes top {
+    from{
+        top: 80px;
+    }
+    to{
+        top: 225px;
+    }
+    
+}
+.images1{
+   bottom : 50px;
+    left: 225px;
+    animation: bottom 2s infinite alternate;
+}
+@keyframes bottom {
+    from{
+        bottom: 80px;
+    }
+    to{
+        bottom: 225px;
+    }
+}
+.images2{
+    left: 50px;
+    top: 225px;
+    animation: left 2s infinite alternate;
+}
+
+@keyframes left {
+    from{
+        left: 80px;
+    }
+    to{
+        left: 225px;
+    }
+}
+.images3{
+    right: 50px;
+    top: 225px;
+    animation: right 2s infinite alternate;
+}
+
+@keyframes right {
+    from{
+        right: 80px;
+    }
+    to{
+        right: 225px;
+    }
+
+}
